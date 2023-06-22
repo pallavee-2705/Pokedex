@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pokédex</h1>
+
+    <div class="search-pokemon" id="search-pokemon">
+        <input type="number" class="bynumber" id="bynumber" max="20" min="1" placeholder=" Search by Number.." name="searchbynumber" onkeyup="searchNumber()"><button id="btn1" type="submit"onclick="searchNumber()">Search</button><input id="byname" type="text" placeholder="  Search by Name.." onkeyup="searchName()"><button id="btn2" type="submit" onclick="searchName() ">Search</button>
+    </div>
+
+
+
+    <div class="mycontainer" id="mycontainer">
+        <div class="pokemon-list" id="pokemon-list">
+            <ul id="poke-list">
+
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#001</p>
+                        </div>
+                        <h3 id="poke-heading">Bulbasaur</h3>
+                        <div class="poke-type-grass-poison" id="poke-type-grass-poison">
+                            <p> Grass | Poison</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png" alt="Ivysaur"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#002</p>
+                        </div>
+                        <h3>Ivysaur</h3>
+                        <div class="poke-type-grass-poison" id="poke-type-grass-poison">
+                            <p> Grass | Poison</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png" alt="Venusaur"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#003</p>
+                        </div>
+                        <h3>Venusaur</h3>
+                        <div class="poke-type-grass-poison" id="poke-type-grass-poison">
+                            <p> Grass | Poison</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png" alt="Charmander"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#004</p>
+                        </div>
+                        <h3>Charmander</h3>
+                        <div class="poke-type-fire" id="poke-type-fire">
+                            <p>Fire</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png" alt="Charmeleon"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#005</p>
+                        </div>
+                        <h3>Charmeleon</h3>
+                        <div class="poke-type-fire" id="poke-type-fire">
+                            <p>Fire</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png" alt="Charizard"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#006</p>
+                        </div>
+                        <h3>Charizard</h3>
+                        <div class="poke-type-fire" id="poke-type-fire">
+                            <p>Fire</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" alt="Squirtle"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#007</p>
+                        </div>
+                        <h3>Squirtle</h3>
+                        <div class="poke-type-water" id="poke-type-water">
+                            <p>Water</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png" alt="Wartortle"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#008</p>
+                        </div>
+                        <h3>Wartortle</h3>
+                        <div class="poke-type-water" id="poke-type-water">
+                            <p>Water</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png" alt="Blastoise"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#009</p>
+                        </div>
+                        <h3>Blastoise</h3>
+                        <div class="poke-type-water" id="poke-type-watter">
+                            <p>Water</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png" alt="Caterpie"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#010</p>
+                        </div>
+                        <h3>Caterpie</h3>
+                        <div class="poke-type-bug" id="poke-type-bug">
+                            <p>Bug</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png" alt="Metapod"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#011</p>
+                        </div>
+                        <h3>Metapod</h3>
+                        <div class="poke-type-bug" id="poke-type-bug">
+                            <p>Bug</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png" alt="Butterfree"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#012</p>
+                        </div>
+                        <h3>Butterfree</h3>
+                        <div class="poke-type-bug-flying" id="poke-type-bug-flying">
+                            <p>Bug | Flying</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png" alt="Weedle"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#013</p>
+                        </div>
+                        <h3>Weedle</h3>
+                        <div class="poke-type-bug-poison" id="poke-type-bug-poison">
+                            <p>Bug | Poison</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png" alt="Kakuna"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#014</p>
+                        </div>
+                        <h3>Kakuna</h3>
+                        <div class="poke-type-bug-poison" id="poke-type-bug-poison">
+                            <p>Bug | Poison</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png" alt="Beedrill"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#015</p>
+                        </div>
+                        <h3>Beedrill</h3>
+                        <div class="poke-type-bug-poison" id="poke-type-bug-poison">
+                            <p>Bug | Poison</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png" alt="Pidgey"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#016</p>
+                        </div>
+                        <h3>Pidgey</h3>
+                        <div class="poke-type-normal-flying" id="poke-type-normal-flying">
+                            <p>Normal | Flying</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png" alt="Pidgeotto"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#017</p>
+                        </div>
+                        <h3>Pidgeotto</h3>
+                        <div class="poke-type-normal-flying" id="poke-type-normal-flying">
+                            <p>Normal | Flying</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/018.png" alt="Pidgeot"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#018</p>
+                        </div>
+                        <h3>Pidgeot</h3>
+                        <div class="poke-type-normal-flying" id="poke-type-normal-flying">
+                            <p>Normal |Flying</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png" alt="Rattata"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#019</p>
+                        </div>
+                        <h3>Rattata</h3>
+                        <div class="poke-type-normal" id="poke-type-normal">
+                            <p>Normal</p>
+                        </div>
+                        <br>
+                    </div>
+                <li>
+                    <div class="pokemon" id="pokemon">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png" alt="Raticate"
+                            height="150" width="150">
+                        <div class="poke-font" id="poke-font">
+                            <p>#020</p>
+                        </div>
+                        <h3>Raticate</h3>
+                        <div class="poke-type-normal" id="poke-type-normal">
+                            <p>Normal</p>
+                        </div>
+                        <br>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <footer id="foot">
+        <p>Author : Pallavee Bisoyee&nbsp;</p>
+        <p>References : <a href="https://www.kaggle.com/kvpratama/pokemon-images-dataset" target="_blank">Pokemon
+                Images</a><a
+                href="https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/"
+                target="_blank">Pokemon Data Set</a></p>
+        <p>&copy; Copyright 2022 Western University</p>
+    </footer>
+
+    <script src="./pokemons.js"></script>
+
+</body>
+
+
+
+</html>

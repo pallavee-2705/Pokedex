@@ -1,0 +1,228 @@
+        title{
+            margin-top: 20px ;
+        }
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgba(173, 236, 245, 0.844);
+            border: #103654;
+            border-width: 10px;
+        }
+        h1{
+            margin-top: 30px;
+            text-align: center;
+            color: brown;
+
+        }
+        h3{
+            color: darkblue ;
+        }
+        a{
+            margin-left: 10px;
+        }
+        ul{
+            list-style-type: none;  
+            display: grid;  
+            grid-auto-columns: 1fr; 
+            grid-auto-rows: 1fr; 
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+            padding: 10px;
+               
+        }
+        li{
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+        img{
+            padding: 8px;
+            height: 180px;
+            width: 180px;   
+
+        }
+        .search-pokemon input[type='text']{
+        border-radius: 5px;
+        margin-left: 550px;
+        height: 35px;
+        width: 200px;
+        font-size: 15px;
+        border-width: 0px;
+        }
+        .search-pokemon button[type='submit']{
+            background-color: rgba(0, 119, 255, 0.552);
+            color: white;
+            border-radius: 5px;
+            font-size: 15px;
+            height: 35px;
+            width: 70px;
+            cursor: pointer;
+            border: 0ch;
+        }
+
+        .search-pokemon input[type='number']{
+            border-radius: 5px;
+            margin-left: 200px;
+            height: 35px;
+            width: 200px;
+            font-size: 15px;
+            border-width: 0px; 
+            }
+
+        .pokemon-list .pokemon{
+            border: 1px solid rgba(0, 0, 0, 0.567);
+            width: 300px;
+            height: 350px;
+            border-radius: 5%;
+            background-color: aliceblue;
+            
+        }
+        .pokemon-list .pokemon .poke-font{
+            font-size: 15px;
+            color: gray;
+
+        }  
+          
+
+        .pokemon-list .pokemon .poke-type-grass-poison{
+            font-size: 16px;
+            background-color: aquamarine;
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344);   
+            border-radius: 5px; 
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .pokemon-list .pokemon .poke-type-fire{
+            font-size: 16px;
+            background-color: rgba(255, 0, 0, 0.559); 
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344);   
+            border-radius: 5px;
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .pokemon-list .pokemon .poke-type-water{
+            font-size: 16px;
+            background-color: rgba(0, 162, 255, 0.841);
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344);  
+            border-radius: 5px; 
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .pokemon-list .pokemon .poke-type-bug{
+            font-size: 16px;
+            background-color: rgba(89, 255, 47, 0.623);
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344);  
+            border-radius: 5px; 
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        
+        .pokemon-list .pokemon .poke-type-bug-flying{
+            font-size: 16px;
+            background-color: darkseagreen;
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344);   
+            border-radius: 5px;
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .pokemon-list .pokemon .poke-type-bug-poison{
+            font-size: 16px;
+            background-color: rgba(128, 0, 128, 0.611);
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344); 
+            border-radius: 5px;  
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .pokemon-list .pokemon .poke-type-normal-flying{
+            font-size: 16px;
+            background-color: burlywood;
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344);  
+            border-radius: 5px; 
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        .pokemon-list .pokemon .poke-type-normal{
+            font-size: 16px;
+            background-color: rgba(165, 42, 42, 0.707);
+            width: 140px;
+            height: 10%;
+            border: 1px solid rgba(0, 0, 0, 0.344); 
+            border-radius: 5px;  
+            margin-left: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+
+        }
+        #pokemon-list{
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        background-color: antiquewhite;
+        text-align: center;
+        align-items: center;
+        }
+footer{
+    height: 200px;
+    font-size: 18px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 60px;
+    column-span: all;
+    background-color: #032a46;
+}
+a{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.myjscontainer{
+    border: 1px solid rgba(0, 0, 0, 0.567);
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    height: 350px;
+    width: 300px;
+    border-radius: 5%;
+
+
+}
+.htmlcontainerstyle{
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 25px;
+        align-items: center;
+}
